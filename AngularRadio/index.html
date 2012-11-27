@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app lang="en">
+<head>
+	<title>Marcus Radiosajt</title>
+	<link href="bootstrap.css" rel="stylesheet">
+
+	<style type="text/css">
+		body {
+			max-width: 900px;
+		}
+
+		#channel-list ul {
+			list-style-type: none;
+		}
+
+		#channel-list img {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#channel-list li {
+			padding: 20px;
+			float: left;
+			display: inline-block;
+			min-width: 50px;
+		}
+
+		#channel-list-area div {
+			width: "100%";
+		}
+
+		#audio-player {
+			padding: 40px;
+		}
+	</style>
+
+	<script src="angular.min.js"></script>
+</head>
+
+<body>
+	<audio id="audio-player" src="" controls autoplay>
+		Your browser does not support the audio element.
+	</audio>
+
+	<div id="channel-list-area" ng-controller="ChannelController">
+		<ul id="channel-list">
+			<li ng-repeat="channel in channels">
+				<a href="#" ng-click="play(channel)">
+					<img class="img-rounded" style="max-width:100px" ng-src="{{channel.imageurl}}" title="{{channel.name}}" /><br>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+    <script src="jquery-1.7.2.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
