@@ -12,7 +12,7 @@ function ChannelController($scope) {
 					category: value.channeltype,
 					url: value.liveaudio.url
 				};
-				if (c.imageurl !== '' && c.category !== "Lokal kanal" && c.category !== "Extrakanaler")
+				if (c.imageurl !== '' && c.category !== "Lokal kanal")
 				{
 					$scope.channels.push(c);
 				}
