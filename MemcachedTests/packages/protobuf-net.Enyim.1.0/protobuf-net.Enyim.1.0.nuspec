@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>protobuf-net.Enyim</id>
+    <version>1.0</version>
+    <authors>Marc Gravell</authors>
+    <owners>Marc Gravell</owners>
+    <licenseUrl>http://protobuf-net.googlecode.com/svn/trunk/Licence.txt</licenseUrl>
+    <projectUrl>http://code.google.com/p/protobuf-net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Enyim memcached client provides "memcached" cache support; this package adds a protobuf-net transcoder, allowing fast and efficient serialization/deserialization instead of using BinaryFormatter.</description>
+    <summary>Provides support for protobuf-net as an Enyim (memcached) transcoder</summary>
+    <releaseNotes>* 1.0.0.0		Initial release</releaseNotes>
+    <language>en-US</language>
+    <tags>protobuf-net memcached enyim cache transcoder</tags>
+    <dependencies>
+      <dependency id="EnyimMemcached" version="2.12" />
+      <dependency id="protobuf-net" version="2.0.0.602" />
+    </dependencies>
+    <references>
+      <reference file="protobuf-net.Enyim.dll" />
+    </references>
+  </metadata>
+</package>
